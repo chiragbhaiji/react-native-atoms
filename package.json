@@ -2,7 +2,7 @@
   "name": "react-native-cb-atoms",
   "version": "1.0.0",
   "description": "Collection of React Native components.",
-  "main": "index.js",
+  "main": "index.ts",
   "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +26,13 @@
   },
   "homepage": "https://github.com/chiragbhaiji/react-native-atoms.git#readme",
   "devDependencies": {
+    "react": "^18.2.0",
+    "react-native": "^0.72.2",
+    "typescript": "^5.1.6",
+    "@types/jest": "^29.5.3",
+    "@types/node": "^20.4.1",
+    "@types/react": "^18.2.14",
+    "@types/react-native": "^0.72.2",
     "metro-react-native-babel-preset": "^0.77.0"
   },
   "peerDependencies": {
