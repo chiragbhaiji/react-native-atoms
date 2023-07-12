@@ -7,7 +7,7 @@
 
 import React from 'react';
 import {SafeAreaView, StatusBar, useColorScheme} from 'react-native';
-import {Button} from 'react-native-atoms';
+import {Button} from 'react-native-cb-atoms';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 

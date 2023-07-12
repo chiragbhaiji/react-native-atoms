@@ -1,14 +1,15 @@
 {
-  "name": "react-native-atoms",
+  "name": "react-native-cb-atoms",
   "version": "1.0.0",
   "description": "Collection of React Native components.",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chiragbhaiji/react-native-atoms.git"
+    "url": "https://github.com/chiragbhaiji/react-native-atoms.git"
   },
   "keywords": [
     "react-native",
@@ -18,7 +19,7 @@
     "ui",
     "atoms"
   ],
-  "author": "Chirag Bhaiji",
+  "author": "chiragbhaiji",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/chiragbhaiji/react-native-atoms.git/issues"
@@ -30,5 +31,8 @@
   "peerDependencies": {
     "react": "^18.2.0",
     "react-native": "^0.72.2"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
   }
 }
