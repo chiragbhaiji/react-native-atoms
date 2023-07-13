@@ -1,3 +1,3 @@
-import {Button, ButtonPropsType} from "./src/Button";
+import { Button, Input } from "./src/atoms";
 
-export { Button, ButtonPropsType };
+export { Button, Input };

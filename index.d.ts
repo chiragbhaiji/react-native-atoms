@@ -1,3 +1,3 @@
-import { ButtonPropsType } from "./src/Button";
+import { ButtonPropsType } from "./src/types/ButtonPropsType";
 
 export { ButtonPropsType };
