@@ -6,30 +6,15 @@
  */
 
 import React from 'react';
-import { SafeAreaView, StatusBar, useColorScheme } from 'react-native';
-import { Button } from 'react-native-cb-atoms';
-
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import {SafeAreaView, View} from 'react-native';
+import {CreateItemBar} from 'react-native-cb-atoms';
 
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <Button
-        labelColor="primary"
-        label="DARK RED"
-        style={{ backgroundColor: 'blue' }}
-        onPress={() => console.log('Welcome')}
-      />
+    <SafeAreaView>
+      <View style={{paddingHorizontal: 20}}>
+        <CreateItemBar onAdd={console.log} />
+      </View>
     </SafeAreaView>
   );
 }

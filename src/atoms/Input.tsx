@@ -7,9 +7,11 @@ const Input: React.FC<TextInputProps> = ({ ...rest }) => (
 
 const styles = StyleSheet.create({
   input: {
+    flex: 1,
     borderWidth: 1,
     borderRadius: 4,
-    borderColor: "black",
+    borderColor: "grey",
+    padding: 8,
   },
 });
 

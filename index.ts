@@ -1,3 +1,3 @@
-import { Button, Input } from "./src/atoms";
+import { CreateItemBar } from "./src/molecules";
 
-export { Button, Input };
+export { CreateItemBar };
