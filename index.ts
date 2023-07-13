@@ -1,3 +1,3 @@
-import { CreateItemBar } from "./src/molecules";
+import { SearchBar, IconButton } from "./src/molecules";
 
-export { CreateItemBar };
+export { SearchBar, IconButton };

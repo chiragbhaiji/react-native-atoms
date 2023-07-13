@@ -1,3 +1,4 @@
-import { CreateItemBar } from "./CreateItemBar";
+import { SearchBar } from "./SearchBar";
+import { IconButton } from "./IconButton";
 
-export { CreateItemBar };
+export { SearchBar, IconButton };

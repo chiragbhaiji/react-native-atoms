@@ -1,3 +1,3 @@
-import { CreateItemBarPropsType } from "./src/molecules/CreateItemBar";
+import { IconButtonPropsType } from "./src/molecules/IconButton";
 
-export { CreateItemBarPropsType }
+export { IconButtonPropsType }

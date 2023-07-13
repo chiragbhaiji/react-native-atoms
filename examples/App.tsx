@@ -7,13 +7,13 @@
 
 import React from 'react';
 import {SafeAreaView, View} from 'react-native';
-import {CreateItemBar} from 'react-native-cb-atoms';
+import {SearchBar} from 'react-native-cb-atoms';
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView>
-      <View style={{paddingHorizontal: 20}}>
-        <CreateItemBar onAdd={console.log} />
+    <SafeAreaView style={{flex: 1}}>
+      <View style={{padding: 16}}>
+        <SearchBar />
       </View>
     </SafeAreaView>
   );
