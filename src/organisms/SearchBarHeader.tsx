@@ -17,8 +17,6 @@ export const SearchBarHeader: React.FC<SearchBarHeaderPropsType> = ({
       <SearchBar onSearchEnter={onSearchEnter} />
       <IconButton
         name="cart"
-        size="s"
-        color="primary"
         onPress={onPressCart}
         containerStyle={{ marginLeft: 8 }}
       />

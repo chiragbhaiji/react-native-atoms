@@ -1,4 +1,4 @@
-import { IconButton, SearchBar } from "./src/molecules";
+import { IconButton, SearchBar, FavoriteStatus } from "./src/molecules";
 import { SearchBarHeader } from "./src/organisms";
 
-export { IconButton, SearchBar, SearchBarHeader };
+export { IconButton, SearchBar, FavoriteStatus, SearchBarHeader };

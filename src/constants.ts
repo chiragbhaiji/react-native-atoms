@@ -3,6 +3,7 @@ export const theme = {
     font: {
       primary: "black",
       secondary: "grey",
+      heart: "red",
     },
     button: {
       primary: "black",
