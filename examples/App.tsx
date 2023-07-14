@@ -7,7 +7,11 @@
 
 import React from 'react';
 import {SafeAreaView, View} from 'react-native';
-import {ListHeader, SearchBarHeader} from 'react-native-cb-atoms';
+import {
+  ListHeader,
+  RatingWithReviewsCount,
+  SearchBarHeader,
+} from 'react-native-cb-atoms';
 
 function App(): JSX.Element {
   return (
@@ -18,6 +22,7 @@ function App(): JSX.Element {
           onSearchEnter={searchTerm => console.log(searchTerm)}
         />
         <ListHeader label="Best Sale Product" actionLabel="See more" />
+        <RatingWithReviewsCount ratingValue={4.7} reviewsCount={2355} />
       </View>
     </SafeAreaView>
   );
