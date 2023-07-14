@@ -7,15 +7,15 @@ import { Label } from "./Label";
 const buttonColors = theme.colors.button;
 
 export interface ButtonPropsType extends PressableProps {
-  type: keyof typeof buttonColors;
   label: string;
-  labelType: keyof typeof textTypes;
+  type?: keyof typeof buttonColors;
+  labelType?: keyof typeof textTypes;
 }
 
 export const Button: React.FC<ButtonPropsType> = ({
-  type,
   label,
-  labelType,
+  type = "primary",
+  labelType = "l1",
   ...rest
 }) => {
   const { style, ...remainingFromProps } = rest;

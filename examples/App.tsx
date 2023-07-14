@@ -7,7 +7,7 @@
 
 import React from 'react';
 import {SafeAreaView, View} from 'react-native';
-import {SearchBarHeader} from 'react-native-cb-atoms';
+import {ListHeader, SearchBarHeader} from 'react-native-cb-atoms';
 
 function App(): JSX.Element {
   return (
@@ -17,6 +17,7 @@ function App(): JSX.Element {
           onPressCart={() => console.log('Cart pressed!')}
           onSearchEnter={searchTerm => console.log(searchTerm)}
         />
+        <ListHeader label="Best Sale Product" actionLabel="See more" />
       </View>
     </SafeAreaView>
   );

@@ -2,12 +2,14 @@ export const theme = {
   colors: {
     font: {
       primary: "black",
-      secondary: "grey",
+      secondary: "lightgrey",
       heart: "red",
+      action: "green",
     },
     button: {
       primary: "black",
       secondary: "grey",
+      text: "transparent",
     },
   },
 };
@@ -60,4 +62,12 @@ export const textTypes = {
     fontSize: 8,
     color: theme.colors.font.secondary,
   },
+  actionLabel1: {
+    fontSize: 16,
+    color: theme.colors.font.action,
+  },
+  actionLabel2: {
+    fontSize: 12,
+    color: theme.colors.font.action,
+  }
 };

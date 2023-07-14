@@ -1,5 +1,5 @@
 import React from "react";
-import { TextProps, StyleSheet, Text } from "react-native";
+import { TextProps, Text } from "react-native";
 import { textTypes } from "../constants";
 
 export interface LabelPropsType extends TextProps {
@@ -8,16 +8,9 @@ export interface LabelPropsType extends TextProps {
 }
 
 const Label: React.FC<LabelPropsType> = ({ value, type, ...rest }) => (
-  <Text style={[styles.text, textTypes[type], rest.style]} {...rest}>
+  <Text style={[textTypes[type], rest.style]} {...rest}>
     {value}
   </Text>
 );
-
-const styles = StyleSheet.create({
-  text: {
-    flex: 1,
-    padding: 8,
-  },
-});
 
 export { Label };
