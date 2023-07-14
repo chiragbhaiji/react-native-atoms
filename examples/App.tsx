@@ -7,13 +7,16 @@
 
 import React from 'react';
 import {SafeAreaView, View} from 'react-native';
-import {SearchBar} from 'react-native-cb-atoms';
+import {SearchBarHeader} from 'react-native-cb-atoms';
 
 function App(): JSX.Element {
   return (
     <SafeAreaView style={{flex: 1}}>
       <View style={{padding: 16}}>
-        <SearchBar />
+        <SearchBarHeader
+          onPressCart={() => console.log('Cart pressed!')}
+          onSearchEnter={searchTerm => console.log(searchTerm)}
+        />
       </View>
     </SafeAreaView>
   );

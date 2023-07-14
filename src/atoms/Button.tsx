@@ -1,19 +1,29 @@
 import React from "react";
 import { Pressable, Text, PressableProps } from "react-native";
 
-import { colors } from "../constants";
+import { textTypes, theme } from "../constants";
+import { Label } from "./Label";
+
+const buttonColors = theme.colors.button;
 
 export interface ButtonPropsType extends PressableProps {
+  type: keyof typeof buttonColors;
   label: string;
-  labelColor: keyof typeof colors;
+  labelType: keyof typeof textTypes;
 }
 
 export const Button: React.FC<ButtonPropsType> = ({
+  type,
   label,
-  labelColor,
+  labelType,
   ...rest
-}) => (
-  <Pressable {...rest}>
-    <Text style={{ color: colors[labelColor] }}>{label}</Text>
-  </Pressable>
-);
+}) => {
+  const { style, ...remainingFromProps } = rest;
+  const finalStyle = { backgroundColor: buttonColors[type], style };
+
+  return (
+    <Pressable style={finalStyle} {...remainingFromProps}>
+      <Label value={label} type={labelType} />
+    </Pressable>
+  );
+};
