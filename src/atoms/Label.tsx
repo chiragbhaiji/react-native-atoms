@@ -7,10 +7,14 @@ export interface LabelPropsType extends TextProps {
   type: keyof typeof textTypes;
 }
 
-const Label: React.FC<LabelPropsType> = ({ value, type, ...rest }) => (
-  <Text style={[textTypes[type], rest.style]} {...rest}>
-    {value}
-  </Text>
-);
+const Label: React.FC<LabelPropsType> = ({ value, type, ...rest }) => {
+  const { style, ...restExcludingStyle } = rest;
+
+  return (
+    <Text style={[textTypes[type], style]} {...restExcludingStyle}>
+      {value}
+    </Text>
+  );
+};
 
 export { Label };

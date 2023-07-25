@@ -5,13 +5,16 @@ import {
   ListHeader,
   RatingWithReviewsCount,
 } from "./src/molecules";
-import { SearchBarHeader } from "./src/organisms";
+import { SearchBarHeader, ProductItem } from "./src/organisms";
 
 export {
+  // molecules
   IconButton,
   SearchBar,
   FavoriteStatus,
-  SearchBarHeader,
   ListHeader,
   RatingWithReviewsCount,
+  // organisms
+  ProductItem,
+  SearchBarHeader,
 };

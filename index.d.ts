@@ -5,12 +5,16 @@ import { ListHeaderPropsType } from "./src/molecules/ListHeader";
 import { RatingWithReviewsCountPropsType } from "./src/molecules/RatingWithReviewsCount";
 
 import { SearchBarHeaderPropsType } from "./src/organisms/SearchBarHeader";
+import { ProductItemPropsType } from "./src/organisms/ProductItem";
 
 export {
-    IconButtonPropsType,
-    SearchBarPropsType,
-    FavoriteStatusPropsType,
-    ListHeaderPropsType,
-    SearchBarHeaderPropsType,
-    RatingWithReviewsCountPropsType,
+  // molecules
+  IconButtonPropsType,
+  SearchBarPropsType,
+  FavoriteStatusPropsType,
+  ListHeaderPropsType,
+  RatingWithReviewsCountPropsType,
+  // organisms
+  ProductItemPropsType,
+  SearchBarHeaderPropsType,
 };
